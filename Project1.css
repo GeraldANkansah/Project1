@@ -1,0 +1,45 @@
+/* CSS Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #e9ecef;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #ffffff;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #f8f9fa;
+  }
+  
+  /* Flexbox within Grid Items */
+  .flexbox-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .card {
+    flex: 1; /* Make cards equal in width */
+    background-color: #dee2e6;
+    padding: 20px;
+    text-align: center;
+  }
