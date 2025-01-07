@@ -6,19 +6,108 @@
     <title>Document</title>
     <link rel="stylesheet" href="Project1.css">
 </head>
+
 <body>
-    <div class="grid-container">
-        <header class="header">Header</header>
-        <nav class="sidebar">Sidebar</nav>
-        <main class="content">
-          <div class="flexbox-container">
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
-            <div class="card">Card 3</div>
-          </div>
-        </main>
-        <footer class="footer">Footer</footer>
+  <div class="grid-container">
+
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <img src="monitor-dashboard.svg" alt="Image" class="header-image" />
+        <h4 class="header-text">Dashboard</h4>
       </div>
-      
+      <div class="sidebar-link">
+        <div class="sidebar-home">
+        <img src="home-lightning-bolt.svg" alt="Image" class="header-image"/>
+          Home
+      </div>
+        <div class="sidebar-Profile">
+          <img src="id-card.svg" alt="Image" class="header-image"/>
+          Profile
+        </div>
+      <div class="sidebar-messages">
+          <img src="phone-incoming-outgoing.svg" alt="Image" class="header-image"/>
+          Messages
+      </div>
+      <div class="sidebar-history">
+        <img src="web-clock.svg" alt="Image" class="header-image"/>
+        History
+      </div>
+      <div class="sidebar-tasks">
+        <img src="book-multiple.svg" alt="Image" class="header-image"/>
+        Tasks
+      </div>
+      <div class="sidebar-communities">
+        <img src="account-group-outline.svg" alt="Image" class="header-image"/>
+        Communities
+      </div>
+      <div class="sidebar-settings">
+        <img src="cog.svg" alt="Image" class="header-image"/>
+        Settings
+      </div>
+      <div class="sidebar-support">
+        <img src="cloud-question.svg" alt="Image" class="header-image"/>
+        Support
+      </div>
+      <div class="sidebar-privacy">
+        <img src="security.svg" alt="Image" class="header-image"/>
+        Privacy
+      </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="search-bar">
+        <form action="/search" method="get">
+          <input type="text" name="query" placeholder="Search..." />
+          <button type="submit">
+            <img src="/Project1/magnify.svg" alt="Search" />
+          </button>
+        </form>
+      </div>
+      <span class="small-text">Hello,</span>
+      <div>Gerald Nkansah (@gnkansah)</div>
+      <div class="button">
+        <button name="New">New</button>
+        <button name="Share">Share</button>
+        <button name="Upload">Upload</button>
+        <img src="bell-alert.svg" alt="Image" class="header-image">
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="flexbox-container">
+        <section class="grid-section">
+          <div class="card">
+            <strong>Insane Project</strong>
+            <p>
+              This ground-breaking project pushes the limits of creativity and 
+              technology by showcasing creative solutions to challenging issues. 
+              It's evidence of audacious concepts and unwavering perseverance that produce remarkable 
+              outcomes.</p>
+          </div>
+          <div class="card">
+            <strong> Not as Insane Project</strong>
+            <p>This project exhibits efficient design and functional creativity, 
+              although being less ambitious than its counterpart. 
+              It focuses on finding simple and efficient solutions to common problems.</p>
+          </div>
+          <div class="card">
+            <strong>Self Driving Car</strong>
+            <p>In order to enable automobiles to travel on their own, this project combines machine learning, sensor integration, and sophisticated algorithms, 
+              delving into the intriguing realm of autonomous vehicles. 
+              It draws attention to the mobility and transportation of the future.</p>
+          </div>
+          <div class="card">
+            <strong>Streaming App</strong>
+            <p> This project offers a user-friendly platform for streaming music, movies, 
+              and television shows, all designed for seamless pleasure. 
+              It offers a remarkable watching experience thanks to its user-friendly design and tailored suggestions.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">Footer</footer>
+  </div>
 </body>
 </html>
