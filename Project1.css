@@ -4,10 +4,10 @@
   grid-template-areas:
     "sidebar header"
     "sidebar content"
-    "sidebar footer";
+    "footer footer";
   grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4, content takes 3/4 */
   grid-template-rows: auto 1fr auto; /* Auto-sizing rows for header, content, and footer */
-  gap: 10px;
+  gap: 0;
   height: 100vh; /* Full viewport height */
 }
 
@@ -77,12 +77,29 @@
 
 .header {
   grid-area: header;
-  background-color: #f8f9fa;
+  background-color: gray;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  position: relative;
 }
+
+.name-text{
+    position:absolute;
+    top: 50px;
+    right: 30px;
+    color: black;
+}
+.right-image{ 
+  position: absolute;
+  top: 50%;
+  right: 160px;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+} 
+
 .header-image {
   width: 20px;
   height: 20px;
@@ -95,6 +112,8 @@
 .button{
     display:flex;
     gap:10px;
+    margin-left: 80px;
+    align-items: center;
 }
 .button button{
     border: none;
@@ -107,11 +126,18 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: background-color 0.3s ease; 
 }
+.user-row{
+    display:flex;
+    align-items: center;
+    color:black;
+}
 
 .content {
   grid-area: content;
   background-color: #ffffff;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer {
@@ -127,20 +153,45 @@
   flex-wrap: wrap;
   padding: 10px;
 }
+.flexbox-container2{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
 
+.content{
+    background-color: white;
+}
 .card {
   flex: 1;
   background-color: #ddd;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin: 25px;
+  font-size: small;
+  
+
+}
+.card strong{
+    display: block;
+    margin-bottom:0;
+}
+.card p{
+    margin:0;
 }
 
 .search-bar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 5px;
+}
+form{
+    display: flex;
+    align-items: center;
 }
 
 .search-bar input[type="text"] {
@@ -156,9 +207,11 @@
 .search-bar button img {
   width: 24px;
   height: 24px;
+  margin-top: 5px;
 }
 
 .search-bar button {
+  display: flex;
   background: none;
   border: none;
   cursor: pointer;
@@ -168,7 +221,8 @@
   font-size: 12px;
   color: black;
   display: block;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  margin-top: 5px;
 }
 
 .image-text {
@@ -176,3 +230,24 @@
   margin-left: 1px;
   margin-top: 2px;
 }
+.trending-image{
+  max-width: 20%;
+  max-height: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.trending-content{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: black 1px dashed;
+}
+.trending-image-text{
+    display: flex;
+    flex-direction: column;
+}
+
+
